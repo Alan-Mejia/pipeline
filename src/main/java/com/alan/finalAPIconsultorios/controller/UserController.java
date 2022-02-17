@@ -4,7 +4,7 @@ import com.alan.finalAPIconsultorios.dtos.SimpleUserDTO;
 //import com.alan.finalAPIconsultorios.grpcservice.UserGrpcServiceImpl;
 import com.alan.finalAPIconsultorios.models.User;
 import com.alan.finalAPIconsultorios.serviceImpl.UserServiceImpl;
-import com.doctorsrvc.grpc.Doctor;
+//import com.doctorsrvc.grpc.Doctor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
