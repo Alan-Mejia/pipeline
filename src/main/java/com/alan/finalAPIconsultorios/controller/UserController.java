@@ -1,7 +1,7 @@
 package com.alan.finalAPIconsultorios.controller;
 
 import com.alan.finalAPIconsultorios.dtos.SimpleUserDTO;
-import com.alan.finalAPIconsultorios.grpcservice.UserGrpcServiceImpl;
+//import com.alan.finalAPIconsultorios.grpcservice.UserGrpcServiceImpl;
 import com.alan.finalAPIconsultorios.models.User;
 import com.alan.finalAPIconsultorios.serviceImpl.UserServiceImpl;
 import com.doctorsrvc.grpc.Doctor;
@@ -54,14 +54,14 @@ public class UserController extends GenericControllerImpl<User,UserServiceImpl> 
     public CompletableFuture<ResponseEntity> delete(@PathVariable("id")Long id){
         return userService.deleteUser(id).thenApply(ResponseEntity::ok);
     }
+//
+//    @Autowired
+//    private UserGrpcServiceImpl userGrpcService;
 
-    @Autowired
-    private UserGrpcServiceImpl userGrpcService;
-
-    @GetMapping("doctorgrpc/{id}")
-    public Doctor getDoctorFromUsersAPI(@PathVariable Long id){
-        return userGrpcService.grpcGetByIdRRequest(id);
-
-    }
+//    @GetMapping("doctorgrpc/{id}")
+//    public Doctor getDoctorFromUsersAPI(@PathVariable Long id){
+//        return userGrpcService.grpcGetByIdRRequest(id);
+//
+//    }
 
 }
