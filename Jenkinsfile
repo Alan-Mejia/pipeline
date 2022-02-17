@@ -16,7 +16,9 @@ pipeline {
 	}
         stage("Unit test") {
             steps {
-                sh "./gradlew test"
+		dir("test"){
+			sh "./gradlew test"
+		}
             }
         }
         stage("Code coverage") {
