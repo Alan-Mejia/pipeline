@@ -1,9 +1,9 @@
 // Para integrar apring con grpc
-buildscript {
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.7.RELEASE")
-	}
-}
+//buildscript {
+//	dependencies {
+//		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.7.RELEASE")
+//	}
+//}
 
 plugins {
 	id 'org.springframework.boot' version '2.6.2'
@@ -41,7 +41,6 @@ dependencies {
 
 //	Para anotaciones de GRPC NECESITA ESTAR ACTUALIZADA
 	implementation 'net.devh:grpc-client-spring-boot-starter:2.13.0.RELEASE'
-
 //	Dependencias necesarias para grpc
 //	runtimeOnly 'io.grpc:grpc-netty-shaded:1.43.1'
 //	implementation 'io.grpc:grpc-protobuf:1.43.1'
@@ -49,7 +48,6 @@ dependencies {
 //	Termina implementacion de dependencias grpc
 
 }
-
 test {
 	useJUnitPlatform()
 }
