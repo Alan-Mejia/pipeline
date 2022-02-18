@@ -51,6 +51,19 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+sourceSets {
+//	main {
+//		java {
+//			//srcDir 'src'
+//		}
+//	}
+	test {
+		java {
+			srcDir 'test/java'
+		}
+	}
+}
+
 jacocoTestReport{
 	dependsOn test
 	reports{
